@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SheCodes Challenges"
+    />
+    <title>SheCodes Challenges</title>
+    
+   
+  
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+        body
+        {
+            margin: 0;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(243, 243, 243);
+            
+        }
+        .podcast-layout
+        {
+            margin: auto;
+            border-radius: 50px;
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-layout
+        {
+            width: 99%;
+            height: 73%;
+            border-radius: 105px 50px 150px 50px;
+            margin: auto;
+            background-color: rgb(243, 243, 243);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rect
+        {
+            position: absolute;
+            width: 150px;
+            height: 70px;
+            background-color: white;
+            display: flex;
+            border-radius: 45px 0px 0px 45px;
+        }
+        .sq1
+        {
+            margin: auto;
+            margin-bottom: -30px;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(243, 243, 243);
+            border-radius: 100% 0% 100% 0% / 86% 100% 0% 14% ;
+            display: flex;
+        }
+        .sq1 img
+        {
+            margin: auto;
+            margin-top: -30px;
+        }
+        .sq2
+        {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(243, 243, 243);
+        }
+        .circle
+        {
+            width: 42.7%;
+            height: 42.7%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0% 100% 100% 0% / 100% 0% 100% 0% ;
+        }
+
+        .navbar
+        {
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            display: flex;
+            margin-top: 0px;
+        }
+        .logo
+        {
+            width: 30%;
+            height: 100%;
+        }
+        .navbar ul
+        {
+          
+            margin: auto;
+            display: flex;
+            width: 40%;
+            height: 100%;
+        
+        }
+        .navbar ul li
+        {
+            
+            margin: auto;
+            list-style: none;  
+            font-family: "Oswald", sans-serif;
+            font-weight: 900;
+            font-size: small;
+            cursor: pointer;
+          
+        }
+      
+        .navbar ul li:hover
+        {
+            
+            transform: scale(1.1);
+            transition: all 0.5s;
+           
+        }
+     
+   
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+
+        .main-content
+        {
+            width: 100%;
+            height: 400px;
+            margin: auto;
+            display: flex;
+        }
+        .prod-content
+        {
+            margin: auto;
+            margin-top: 0px;
+            width: 30%;
+            height: 50%;
+            display: flex;
+           flex-direction: column;
+           z-index: 20;
+        }
+        .prod-content h1
+        {
+            margin: auto;
+            font-family: "Six Caps", sans-serif;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 0px;
+        }
+        .prod-content p,h2
+        {
+            margin: auto;
+            font-family: "Teachers", sans-serif;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+            margin-left: 45px;
+            font-weight: 500;
+        }
+
+        
+        .podcast-hover-fill-button2
+        {
+            margin: auto;
+            display: flex;
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            outline: none;
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0);
+            cursor: pointer;
+            align-items: center;
+            justify-content: left;
+            
+        }         
+        .color-fill-2
+        {
+            position: absolute;
+            margin-left: -7px;
+            width: 20px;
+            height: 50px;
+            border-radius: 25px 0px 0px 25px;
+            background-color: rgb(255, 255, 255);
+            visibility: hidden;
+            color: black;
+        } 
+        .podcast-hover-fill-button2:hover .color-fill-2
+        {
+            visibility: visible;
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            transition: all 0.5s;
+            background-color:  rgb(255, 255, 255);
+        }   
+        .podcast-hover-fill-button2:hover p
+        {
+          
+            color: rgb(0, 0, 0) !important;
+        }  
+        .podcast-hover-fill-button2:hover
+        {
+            transition: all 2s;
+        } 
+        .podcast-hover-fill-button2 p
+        {
+            margin: auto;
+            z-index: 10;
+            display: flex;
+        }  
+        .podcast-hover-fill-button2 img
+        {
+            margin: auto;
+            margin-left: 5px;
+        }  
+
+        .prod-img
+        {
+            margin: auto;
+            width: 40%;
+            height: 100%;
+            display: flex;
+        }
+        .prod-img img
+        {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            animation: anim 4s linear infinite forwards;
+            
+            
+        }
+
+     
+
+        .bottom-layout
+        {
+            width: 100%;
+            height: 25%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50px;
+            display: flex;
+        }
+        .bottom-layout img
+        {
+            position: absolute;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            margin-top: -170px;
+            margin-left: -50px;
+            z-index: 10;
+        }
+        .carousel
+        {
+            margin: auto;
+            width: 250px;
+            height: 90%;
+            display: flex;
+            z-index: 30;
+        }
+        .card1
+        {
+            background-image: url("https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .card2
+        {
+            background-image: url("https://darksoul-git.github.io/Interactive%20Carousel%20Design%20for%20Shoes/purple.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .card3
+        {
+            background-image: url("https://darksoul-git.github.io/Interactive%20Carousel%20Design%20for%20Shoes/white.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .card
+        {
+            margin: auto;
+            margin-left: 2px;
+            margin-right: 2px;
+            width: 100px;
+            height: 80%;
+            box-shadow: 1px 1px 20px rgb(231, 231, 231);
+            border-radius: 20px;
+            flex: 1;
+            transition: all 1s;
+            cursor: pointer;
+            display: flex;
+        }
+        .card:hover
+        {
+            flex: 4;
+        }
+        .card img
+        {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+        }
+        @keyframes anim 
+        {
+            0%
+            {
+                margin-top: 0px;
+            }
+            50%
+            {
+                margin-top: 30px; 
+            }
+            100%
+            {
+                margin-top: 0px;
+            }
+        }
+        
+       
+
+        @media only screen and (max-width:600px) 
+        {
+            .podcast-layout
+            {
+                width: 80%;
+                height: 80%;
+            }
+            .main-content
+            {
+                flex-direction: column;
+                zoom: 0.7;
+            }
+            .navbar ul 
+            {
+                display: none;
+            }
+            
+            .prod-content
+            {
+                width: 100%;
+                zoom: 0.8;
+            }
+            .prod-content h1
+            {
+                text-align: center;
+             
+
+            }
+            .prod-content p
+            {
+                text-align: center;
+                margin: auto;
+
+            }
+            .prod-img img
+            {
+                position: absolute;
+                margin: auto;
+                width: 150px;
+                height: 150px;
+                animation-name: anim;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                
+            }
+            .bottom-layout img 
+            {
+                zoom: 0.7;
+            }
+        }
+</style>
+
+</head>
+<body>
+    <div class="podcast-layout">
+        <div class="top-layout" id="top-layout">
+            
+            <div class="rect">
+                <div class="sq1" id="sq1">
+                    <img src="/SheCodesLogo.png" alt="" width="50" height="50">
+                </div>
+                <div class="sq2" id="sq2">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="navbar">
+                <div class="logo">
+
+                </div>
+                <ul>
+                    <li>
+                        <a
+                        class="nav-link"
+                          href="/"
+                          title="Homepage"
+                          >HOME</a
+                        >
+                      </li>
+                      <li>
+                        <a  class="nav-link" href="https://open.spotify.com/show/1VXcH8QHkjRcTCEd88U3ti" target="_blank"
+                          >EPISODES</a
+                        >
+                      </li>
+                      <li>
+                        <a class="nav-link"
+                        
+                          href="https://www.instagram.com/capitulo.virtual/" target="_blank"
+                          title="Contact Massiel Samamé"
+                          >CONTACT</a
+                        >
+                      </li>
+                </ul>
+                
+            </div>
+
+            <div class="main-content">
+                <div class="prod-content">
+                    <h1>TED Talks Daily</h1>
+                    <p>🎙️ Favorite Podcast</p>
+                    <div class="col-8">
+                        <h2>TED Talks Daily Podcast</h2>
+                        <p>
+                        Every weekday,find some space in your day to change your perspectives, ignite your curiosity, and learn something new 
+                        and everything in between by the world's leading thinkers and creators. 
+                        </p>
+                     
+                        </div>
+                   
+                    
+                </div>
+                <div class="prod-img">
+                    
+                        <a href="https://open.spotify.com/episode/16ikvMVpIPR00XNnL5nwTR?si=nHnWq2hVTgi_NqG8Sz8bvQ" target="_blank">  
+                    <img id="prod-img" src="/TedTalk3.png" alt="product-image" /></a>
+                      </div>
+        </div>
+    </div>
+        <div class="bottom-layout">
+            <img src="/PodcastGirl.jpg" alt="podcast-girl">
+            <div class="carousel">
+                <div class="card card1" id="card1" onclick="black()"></div>
+                <div class="card card2" id="card2" onclick="red()"></div>
+                <div class="card card3" id="card3" onclick="white()"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var prodimg = document.getElementById("prod-img");
+    var card1 = document.getElementById("card1");
+    var card2 = document.getElementById("card2");
+    var card3 = document.getElementById("card3");
+    var sq1 = document.getElementById("sq1");
+    var sq2 = document.getElementById("sq2");
+    var toplayout = document.getElementById("top-layout");
+    
+            
+
+
+    function black() 
+    {
+        prodimg.src = "/TedTalk1.png";
+        document.body.style.backgroundColor = "rgb(130, 127, 127)";
+        sq1.style.backgroundColor = "rgb(130, 127, 127)";
+        sq2.style.backgroundColor = "rgb(130, 127, 127)";
+        toplayout.style.backgroundColor = "rgb(130, 127, 127)";
+      
+    }
+    function red() 
+    {
+        prodimg.src = "/TedTalk2.png";
+        document.body.style.backgroundColor = "#b31515";
+        sq1.style.backgroundColor = "#b31515";
+        sq2.style.backgroundColor = "#b31515";
+        toplayout.style.backgroundColor = "#b31515";
+    }
+    function white() 
+    {
+        prodimg.src = "/TedTalk3.png";
+        document.body.style.backgroundColor = "rgb(243, 243, 243)";
+        sq1.style.backgroundColor = "rgb(243, 243, 243)";
+        sq2.style.backgroundColor = "rgb(243, 243, 243)";
+        toplayout.style.backgroundColor = "rgb(243, 243, 243)";
+    }
+</script>
+</body>
+</html>
